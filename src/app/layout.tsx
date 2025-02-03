@@ -8,7 +8,7 @@ import { WishlistProvider } from "@/components/wishlist-context";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import Script from "next/script"; // Import Script for chatbot
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

@@ -7,7 +7,7 @@ import Link from "next/link";
 import {
   Eye,
   Heart,
-  ShoppingCart,
+ 
   Filter,
   Grid,
   List,
@@ -196,22 +196,6 @@ export default function ShopPage() {
     setFilters((prev) => ({ ...prev, ...newFilters }));
   }, []);
 
-  const addToCart = useCallback(
-    (product: Product) => {
-      cartDispatch({
-        type: "ADD_TO_CART",
-        payload: {
-          id: product._id,
-          name: product.title,
-          price: product.price,
-          image: product.image,
-          quantity: 1,
-        },
-      });
-      toast.success("Added to cart!");
-    },
-    [cartDispatch]
-  );
 
   const toggleWishlist = useCallback(
     (product: Product) => {
